@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="fill_horizontal"
+        android:padding="8dp"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="15dp"
+        android:textColor="@color/black">
+    </TextView>
+
+</LinearLayout>
