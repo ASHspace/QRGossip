@@ -142,17 +142,17 @@ public class ContactsActivity extends AppCompatActivity {
 					output.append(name);
 					//This is to read multiple phone numbers associated with the same contact
 					Cursor phoneCursor = contentResolver.query(PhoneCONTENT_URI, null, Phone_CONTACT_ID + " = ?", new String[] { contact_id }, null);
-
-					while (phoneCursor.moveToNext()) {
+					phoneCursor.moveToNext();
+					//while (phoneCursor.moveToNext()) {
 						phoneNumber = phoneCursor.getString(phoneCursor.getColumnIndex(NUMBER));
 						output.append("\n"+phoneNumber);
-					}
+					//}
 					phoneCursor.close();
 				}
 
 
 				// Add the contact to the ArrayList
-				if(output.toString()!=" ")
+				if(!output.toString().isEmpty())
 				contactList.add(output.toString());
 			}
 			// ListView has to be updated using a ui thread

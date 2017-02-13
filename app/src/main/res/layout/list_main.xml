@@ -7,13 +7,11 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="35dp"
+        android:layout_width="36dp"
         android:layout_height="35dp"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="4dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:gravity="center_vertical"
+        android:layout_gravity="center"
         android:src="@drawable/information" >
     </ImageView>
 
@@ -22,11 +20,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@+id/label"
-        android:layout_marginLeft="4dp"
+        android:layout_marginLeft="6dp"
         android:layout_marginRight="4dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:textSize="74px">
+        android:textSize="28sp">
     </TextView>
 
 </LinearLayout>
